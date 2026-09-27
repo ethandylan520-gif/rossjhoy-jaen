@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uñas Ross Jhoy | Salón de Uñas en Jaén</title>
+<meta name="description" content="Uñas Ross Jhoy - Manicura semipermanente, uñas en gel y pedicura en Jaén. 5.0 en Booksy, 37 reseñas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Assistant:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FBF3F1;
+    --bg2: #F3E4E1;
+    --line: #E3CCC7;
+    --wine: #7A2438;
+    --wine-dark: #551829;
+    --ink: #2C2220;
+    --gray: #8A7370;
+    --font-display: 'Prata', serif;
+    --font-body: 'Assistant', sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 400; color: var(--ink); }
+
+  header {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(251, 243, 241, 0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav { display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; max-width: 1120px; margin: 0 auto; }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand span { font-family: var(--font-display); font-size: 1.25rem; color: var(--ink); }
+  .brand span em { color: var(--wine); font-style: normal; }
+  nav ul { list-style: none; display: flex; gap: 30px; }
+  nav ul a { font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--gray); font-weight: 600; transition: color 0.2s; }
+  nav ul a:hover { color: var(--wine); }
+  .nav-cta { background: var(--wine); color: var(--bg); padding: 11px 24px; border-radius: 30px; font-weight: 700; font-size: 0.8rem; }
+
+  .hero {
+    min-height: 100vh; display: flex; align-items: center; position: relative;
+    padding-top: 90px;
+    background:
+      linear-gradient(100deg, rgba(251,243,241,0.95) 34%, rgba(251,243,241,0.72) 100%),
+      url('img/insp_2.jpeg') center/cover no-repeat;
+  }
+  .hero-content { max-width: 620px; }
+  .hero-tag { display: inline-block; color: var(--wine-dark); font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 20px; border: 1px solid var(--wine); padding: 7px 18px; border-radius: 30px; font-weight: 600; }
+  .hero h1 { font-size: 3.2rem; line-height: 1.15; color: var(--ink); margin-bottom: 22px; }
+  .hero h1 em { color: var(--wine); font-style: normal; }
+  .hero p { font-size: 1.12rem; color: var(--gray); max-width: 480px; margin-bottom: 32px; }
+  .hero-rating { display: flex; align-items: center; gap: 14px; margin-bottom: 34px; flex-wrap: wrap; }
+  .stars { color: var(--wine); font-size: 1.15rem; letter-spacing: 2px; }
+  .hero-rating span.txt { color: var(--gray); font-size: 0.92rem; }
+  .btn-row { display: flex; gap: 16px; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 16px 34px; font-weight: 700; font-size: 0.88rem; border-radius: 30px; transition: all 0.25s; }
+  .btn-primary { background: var(--wine); color: var(--bg); }
+  .btn-primary:hover { background: var(--wine-dark); }
+  .btn-outline { border: 1.5px solid var(--wine); color: var(--ink); }
+  .btn-outline:hover { border-color: var(--wine-dark); color: var(--wine-dark); }
+
+  section { padding: 100px 0; }
+  .section-head { text-align: center; max-width: 620px; margin: 0 auto 54px; }
+  .section-tag { color: var(--wine-dark); font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 14px; display: block; font-weight: 600; }
+  .section-head h2 { font-size: 2.5rem; color: var(--ink); }
+  .section-head p { color: var(--gray); margin-top: 16px; font-size: 1.02rem; }
+
+  .about { background: var(--bg2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+  .about-img { border-radius: 14px; overflow: hidden; border: 1px solid var(--line); }
+  .about-img img { height: 420px; width: 100%; object-fit: cover; }
+  .about-text h2 { font-size: 2.2rem; margin-bottom: 20px; color: var(--ink); }
+  .about-text p { color: var(--gray); margin-bottom: 16px; }
+  .about-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 30px; }
+  .fact { border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; background: var(--bg); }
+  .fact strong { display: block; font-family: var(--font-display); font-size: 1.9rem; color: var(--wine); }
+  .fact span { color: var(--gray); font-size: 0.85rem; }
+
+  details.service { border-bottom: 1px solid var(--line); }
+  details.service summary { list-style: none; cursor: pointer; padding: 20px 4px; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+  details.service summary::-webkit-details-marker { display: none; }
+  .svc-name { font-weight: 600; color: var(--ink); font-size: 1.05rem; }
+  .svc-meta { display: flex; align-items: center; gap: 18px; flex-shrink: 0; }
+  .svc-price { color: var(--wine); font-weight: 800; font-size: 1.05rem; white-space: nowrap; }
+  .svc-time { color: var(--gray); font-size: 0.85rem; white-space: nowrap; }
+  .svc-plus { color: var(--gray); font-size: 1.4rem; transition: transform 0.25s; }
+  details[open] .svc-plus { transform: rotate(45deg); color: var(--wine); }
+  .svc-desc { color: var(--gray); font-size: 0.92rem; padding: 0 4px 22px; max-width: 640px; }
+
+  .gallery { background: var(--bg2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  .gallery-grid img { height: 230px; width: 100%; object-fit: cover; border-radius: 12px; border: 1px solid var(--line); }
+
+  .team-solo { display: flex; align-items: center; gap: 40px; background: var(--bg2); border: 1px solid var(--line); border-radius: 16px; padding: 44px; }
+  .team-avatar { width: 96px; height: 96px; border-radius: 50%; flex-shrink: 0; object-fit: cover; border: 2px solid var(--wine); }
+  .team-solo h3 { font-size: 1.5rem; color: var(--ink); margin-bottom: 4px; }
+  .team-solo span.role { color: var(--wine); font-weight: 700; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; }
+  .team-solo p { color: var(--gray); margin-top: 12px; }
+
+  .quote-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .quote-card { background: var(--bg2); border: 1px solid var(--line); border-radius: 14px; padding: 28px; }
+  .quote-card .stars { display: block; margin-bottom: 14px; }
+  .quote-card p { color: var(--gray); font-size: 0.93rem; margin-bottom: 16px; font-style: italic; }
+  .quote-card .who { color: var(--ink); font-weight: 700; font-size: 0.86rem; }
+
+  .info { background: var(--bg2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+  .info-block { margin-bottom: 32px; }
+  .info-block h3 { font-size: 1.1rem; color: var(--wine); margin-bottom: 14px; }
+  .info-block p, .info-block li { color: var(--gray); }
+  .hours-list { list-style: none; }
+  .hours-list li { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 0.93rem; }
+  .hours-list li span:last-child { color: var(--ink); font-weight: 600; }
+  .map-frame { border-radius: 12px; overflow: hidden; border: 1px solid var(--line); }
+  .map-frame img { width: 100%; }
+
+  .cta { text-align: center; padding: 120px 0; background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%); }
+  .cta h2 { font-size: 2.6rem; color: var(--ink); margin-bottom: 18px; }
+  .cta h2 em { color: var(--wine); font-style: normal; }
+  .cta p { color: var(--gray); max-width: 480px; margin: 0 auto 36px; font-size: 1.02rem; }
+
+  footer { background: var(--bg); border-top: 1px solid var(--line); padding: 40px 0; text-align: center; color: var(--gray); font-size: 0.85rem; }
+  footer .brand { justify-content: center; margin-bottom: 16px; }
+
+  .wa-float {
+    position: fixed; bottom: 26px; right: 26px; z-index: 200;
+    background: #25D366; width: 58px; height: 58px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  }
+  .wa-float svg { width: 28px; height: 28px; fill: #fff; }
+
+  @media (max-width: 900px) {
+    nav ul, .nav-cta { display: none; }
+    .hero h1 { font-size: 2.4rem; }
+    .about-grid, .info-grid { grid-template-columns: 1fr; gap: 36px; }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    .quote-strip { grid-template-columns: 1fr; }
+    .section-head h2 { font-size: 1.9rem; }
+    .cta h2 { font-size: 2rem; }
+    .team-solo { flex-direction: column; text-align: center; padding: 32px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">
+      <span>Uñas <em>Ross Jhoy</em></span>
+    </div>
+    <nav><ul>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#opiniones">Opiniones</a></li>
+      <li><a href="#info">Info</a></li>
+    </ul></nav>
+    <a href="#" class="nav-cta" id="navBook">Reservar</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-content">
+    <span class="hero-tag">Jaén &middot; Salón de uñas</span>
+    <h1>Uñas <em>Ross Jhoy</em></h1>
+    <p>Manicura semipermanente, uñas en gel y pedicura con un acabado cuidado al detalle, cita a cita.</p>
+    <div class="hero-rating">
+      <span class="stars">★★★★★</span>
+      <span class="txt">5.0 en Booksy &middot; 37 reseñas</span>
+    </div>
+    <div class="btn-row">
+      <a href="#" class="btn btn-primary" id="heroBook">Reservar por WhatsApp</a>
+      <a href="#servicios" class="btn btn-outline">Ver servicios</a>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="wrap about-grid">
+    <div class="about-img"><img src="img/insp_3.jpeg" alt="Manicura realizada por Ross Jhoy, Jaén"></div>
+    <div class="about-text">
+      <span class="section-tag">Sobre nosotras</span>
+      <h2>Uñas semipermanente con mimo</h2>
+      <p>En Uñas Ross Jhoy cuidamos cada detalle: limpieza de cutículas, limado y esmaltado semipermanente con acabado profesional en cada visita.</p>
+      <p>Manicura rusa, uñas en gel y pedicura, siempre con cita previa.</p>
+      <div class="about-facts">
+        <div class="fact"><strong>37+</strong><span>Reseñas en Booksy</span></div>
+        <div class="fact"><strong>5.0</strong><span>Valoración en Booksy</span></div>
+        <div class="fact"><strong>6</strong><span>Servicios disponibles</span></div>
+        <div class="fact"><strong>6</strong><span>Días abiertos a la semana</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-tag">Carta de servicios</span>
+      <h2>Servicios y precios</h2>
+      <p>Precios reales, sin sorpresas. Reserva el que más te convenga.</p>
+    </div>
+
+    <details class="service" open>
+      <summary>
+        <span class="svc-name">Semipermanente + Refuerzo</span>
+        <span class="svc-meta"><span class="svc-time">1h 20min</span><span class="svc-price">20,00 €</span><span class="svc-plus">+</span></span>
+      </summary>
+      <div class="svc-desc">Limpieza de cutículas, limado, refuerzo en gel, nivelación y esmaltado semipermanente.</div>
+    </details>
+    <details class="service">
+      <summary>
+        <span class="svc-name">Pedicura</span>
+        <span class="svc-meta"><span class="svc-time">1h</span><span class="svc-price">25,00 €</span><span class="svc-plus">+</span></span>
+      </summary>
+      <div class="svc-desc">Retiro de cutícula, cortar, limado, retiro de impurezas, exfoliación, hidratación y preparación para el esmaltado semipermanente.</div>
+    </details>
+    <details class="service">
+      <summary>
+        <span class="svc-name">Uñas en Gel</span>
+        <span class="svc-meta"><span class="svc-time">2h 30min</span><span class="svc-price">45,00 €</span><span class="svc-plus">+</span></span>
+      </summary>
+      <div class="svc-desc">Extensión de uñas en gel con acabado personalizado.</div>
+    </details>
+    <details class="service">
+      <summary>
+        <span class="svc-name">Manicura Rusa + Semipermanente</span>
+        <span class="svc-meta"><span class="svc-time">1h 20min</span><span class="svc-price">20,00 €</span><span class="svc-plus">+</span></span>
+      </summary>
+      <div class="svc-desc">Limpieza de cutículas con talco hipoalergénico para piel sensible, limado, nivelación con base rubber y esmaltado semipermanente.</div>
+    </details>
+    <details class="service">
+      <summary>
+        <span class="svc-name">Limpieza, Nivelación con Base Rubber + Esmaltado</span>
+        <span class="svc-meta"><span class="svc-time">1h 20min</span><span class="svc-price">Desde 20,00 €</span><span class="svc-plus">+</span></span>
+      </summary>
+      <div class="svc-desc">Limpieza de cutículas, nivelación con base rubber y esmaltado semipermanente.</div>
+    </details>
+    <details class="service">
+      <summary>
+        <span class="svc-name">Semipermanente + Esmaltado</span>
+        <span class="svc-meta"><span class="svc-time">1h 20min</span><span class="svc-price">20,00 €</span><span class="svc-plus">+</span></span>
+      </summary>
+      <div class="svc-desc">Esmaltado semipermanente con acabado profesional.</div>
+    </details>
+  </div>
+</section>
+
+<section class="gallery" id="galeria">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-tag">Nuestro trabajo</span>
+      <h2>Un vistazo a nuestro estilo</h2>
+    </div>
+    <div class="gallery-grid">
+      <img src="img/insp_1.jpeg" alt="Manicura roja en Uñas Ross Jhoy">
+      <img src="img/insp_5.jpeg" alt="Manicura burdeos en Uñas Ross Jhoy">
+      <img src="img/insp_6.jpeg" alt="Manicura morada en Uñas Ross Jhoy">
+      <img src="img/insp_8.jpeg" alt="Manicura nude en Uñas Ross Jhoy">
+    </div>
+  </div>
+</section>
+
+<section id="opiniones">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-tag">Quién te atiende</span>
+      <h2>Conoce a Ross</h2>
+    </div>
+    <div class="team-solo">
+      <img class="team-avatar" src="img/insp_4.jpeg" alt="Trabajo de Ross Jhoy">
+      <div>
+        <h3>Rosa Briones Portilla</h3>
+        <span class="role">Manicurista</span>
+        <p>Ross atiende cada cita con cariño y detalle, cuidando cada paso para que tu manicura dure y luzca perfecta.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="section-tag">Opiniones reales</span>
+      <h2>Lo que dicen de nosotras</h2>
+    </div>
+    <div class="quote-strip">
+      <div class="quote-card">
+        <span class="stars">★★★★★</span>
+        <p>"Estoy encantadísima con el resultado. Es súper profesional, cuidadosa y detallista, y se nota muchísimo el cariño que pone en su trabajo."</p>
+        <div class="who">Rocío</div>
+      </div>
+      <div class="quote-card">
+        <span class="stars">★★★★★</span>
+        <p>"Encantadora. Ha sido la primera vez que he acudido y la experiencia ha sido buenísima. Ha realizado un trabajo excelente."</p>
+        <div class="who">María</div>
+      </div>
+      <div class="quote-card">
+        <span class="stars">★★★★★</span>
+        <p>"Fenomenal!! Muy contenta con mis uñas. Trato muy agradable."</p>
+        <div class="who">Alicia</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="info" id="info">
+  <div class="wrap info-grid">
+    <div>
+      <div class="info-block">
+        <h3>Horario</h3>
+        <ul class="hours-list">
+          <li><span>Lunes - Viernes</span><span>8:00 - 21:00</span></li>
+          <li><span>Sábado</span><span>9:30 - 17:00</span></li>
+          <li><span>Domingo</span><span>Cerrado</span></li>
+        </ul>
+      </div>
+      <div class="info-block">
+        <h3>Ubicación</h3>
+        <p>Zona Virgen de la Capilla<br>Jaén &middot; Solo con cita previa</p>
+      </div>
+    </div>
+    <div class="map-frame">
+      <img src="img/map.png" alt="Zona de Uñas Ross Jhoy en Jaén">
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>¿Reservamos tu <em>cita</em>?</h2>
+    <p>Escríbenos por WhatsApp y te confirmamos hueco el mismo día.</p>
+    <a href="#" class="btn btn-primary" id="ctaBook">Reservar por WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">
+      <span>Uñas <em>Ross Jhoy</em></span>
+    </div>
+    <p>Jaén &middot; © 2026 Uñas Ross Jhoy</p>
+  </div>
+</footer>
+
+<a href="#" class="wa-float" id="floatWa" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.1c-.24.68-1.4 1.32-1.94 1.4-.5.08-1.12.11-1.8-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.37-.15-.2-1.18-1.57-1.18-3 0-1.42.75-2.12 1.02-2.41.27-.29.58-.36.78-.36.2 0 .39 0 .56.01.18.01.42-.07.65.5.24.58.82 2 .89 2.15.07.15.11.32.02.52-.09.2-.14.32-.27.49-.13.17-.28.38-.4.51-.13.13-.27.28-.12.55.15.27.68 1.12 1.46 1.82 1 .89 1.85 1.17 2.12 1.3.27.13.43.11.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.6-.13.25.09 1.58.75 1.85.88.27.13.45.2.51.31.07.11.07.63-.17 1.31z"/></svg>
+</a>
+
+<script>
+  const PHONE = "34641275722";
+  const MSG = encodeURIComponent("Hola! Me gustaría reservar cita con Uñas Ross Jhoy.");
+  const waLink = `https://wa.me/${PHONE}?text=${MSG}`;
+  ["navBook","heroBook","ctaBook","floatWa"].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.href = waLink;
+  });
+</script>
+
+</body>
+</html>
